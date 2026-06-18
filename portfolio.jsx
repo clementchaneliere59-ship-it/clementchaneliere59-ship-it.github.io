@@ -458,36 +458,16 @@ function ProjectCard({ p, idx }) {
 }
 
 function ProjectIllustration({ index }) {
-  // Simple, original geometric placeholder — never mimics any brand.
   if (index === 0) {
-    // Stacked palette / 3D crates
+    // Real screenshot of the warehouse app (preparation + 3D palletization view)
     return (
-      <svg viewBox="0 0 600 320" className="proj-svg" aria-hidden="true">
-        <defs>
-          <pattern id="hatch1" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-            <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" strokeWidth="0.7" opacity="0.35" />
-          </pattern>
-        </defs>
-        <rect x="0" y="0" width="600" height="320" fill="url(#hatch1)" />
-        {/* isometric stack */}
-        {[0, 1, 2].map((row) =>
-        [0, 1, 2, 3].map((col) => {
-          const x = 120 + col * 70 - row * 35;
-          const y = 220 - row * 60;
-          return (
-            <g key={`${row}-${col}`} stroke="currentColor" strokeWidth="1.2" fill="var(--bg)">
-                <polygon points={`${x},${y} ${x + 60},${y - 22} ${x + 60},${y + 38} ${x},${y + 60}`} />
-                <polygon points={`${x + 60},${y - 22} ${x + 120},${y} ${x + 120},${y + 60} ${x + 60},${y + 38}`} />
-                <polygon points={`${x},${y} ${x + 60},${y - 22} ${x + 120},${y} ${x + 60},${y + 22}`} fill="var(--accent)" opacity={row === 2 && col === 0 ? 1 : 0} />
-              </g>);
-
-        })
-        )}
-        <text x="20" y="30" className="svg-mono">3D-PACKING.PROTO / v0.4</text>
-      </svg>);
+      <img
+        src="entrepot.jpg"
+        className="proj-img"
+        alt="Interface de préparation de commandes avec vue 3D de palettisation" />);
 
   }
-  // Dashboard / sparkline collage
+  // Dashboard / sparkline collage — illustration géométrique (projet 02)
   return (
     <svg viewBox="0 0 600 320" className="proj-svg" aria-hidden="true">
       <defs>
