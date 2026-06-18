@@ -532,7 +532,7 @@ function Projects() {
       </Reveal>
       <Reveal className="section__title" delay={100}>
         <h2>
-          Deux chantiers
+          Réalisations
           <span className="section__title-sub"></span>
         </h2>
       </Reveal>
