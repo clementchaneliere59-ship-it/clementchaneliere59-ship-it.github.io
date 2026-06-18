@@ -253,24 +253,19 @@ function About() {
       <div className="about__grid">
         <Reveal as="div" className="about__lead" delay={100}>
           <p>
-            <em>Moi c'est Clément.</em> J'ai 20 ans, je vis à Allevard
-            au pied de la Chartreuse, et je passe le plus clair de mon temps
-            à construire des choses — du code, des dashboards, du break dance,
-            et occasionnellement des passes décisives au foot.
+            Je suis étudiant en <em>3<sup>e</sup> année</em> de BUT Informatique à
+            Valence, spécialisé en développement <em>web full-stack</em>. J'aime
+            concevoir des applications de bout en bout&nbsp;: modèle de données,
+            API, interface, mise en production.
           </p>
         </Reveal>
         <Reveal as="div" className="about__body" delay={200}>
           <p>
-            Côté technique, j'aime travailler la chaîne complète&nbsp;: penser le modèle
-            de données, écrire l'API, dessiner l'interface, et m'assurer que ça tient
-            la route en production. Cette année, j'ai notamment développé un système
-            de palettisation 3D et intégré de la reconnaissance vocale dans une
-            application de gestion d'entrepôt.
+            Cette année, j'ai développé un système de palettisation 3D et intégré
+            la reconnaissance vocale dans une application de gestion d'entrepôt.
           </p>
           <p>
-            Je cherche aujourd'hui un <em>stage de fin d'études</em> en
-            développement web où je pourrai apprendre vite et contribuer
-            sérieusement.
+            Je recherche un <em>stage de fin d'études</em> en développement web.
           </p>
         </Reveal>
         <Reveal as="div" className="about__sidebar" delay={300}>
