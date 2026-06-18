@@ -163,7 +163,7 @@ function Header() {
       </nav>
       <div className="header-status">
         <span className="status-dot" />
-        <span>Disponible — Stage 2026</span>
+        <span>Disponible · Stage 2026</span>
       </div>
     </header>);
 
@@ -178,7 +178,7 @@ function Hero({ variant }) {
     const update = () => {
       const d = new Date();
       const opts = { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Paris" };
-      setTime(d.toLocaleTimeString("fr-FR", opts) + " — Allevard, FR");
+      setTime(d.toLocaleTimeString("fr-FR", opts) + " · Allevard, FR");
     };
     update();
     const id = setInterval(update, 30000);
@@ -189,7 +189,7 @@ function Hero({ variant }) {
     <section className="hero" id="top">
       <div className="hero__meta hero__meta--tl">
         <span className="meta-line">Portfolio</span>
-        <span className="meta-line">— 2026</span>
+        <span className="meta-line">· 2026</span>
       </div>
       <div className="hero__meta hero__meta--tr">
         <span className="meta-line">{time}</span>
@@ -204,8 +204,8 @@ function Hero({ variant }) {
             </h1>
             <div className="hero__tagline">
               <p>
-                Étudiant en <em>3<sup>e</sup> année</em> de BUT Informatique à Valence —
-                je conçois et développe des <em>applications&nbsp;web</em> de bout en bout,
+                Étudiant en <em>3<sup>e</sup> année</em> de BUT Informatique à Valence.
+                Je conçois et développe des <em>applications&nbsp;web</em> de bout en bout,
                 de la base de données à l'interface.
               </p>
             </div>
@@ -219,7 +219,7 @@ function Hero({ variant }) {
             </h1>
             <p className="hero__tagline hero__tagline--right">
               Développeur web en formation à l'IUT de Valence. Je construis des outils robustes,
-              de la base PostgreSQL à l'interface React — en passant par l'algorithme qui range
+              de la base PostgreSQL à l'interface React, en passant par l'algorithme qui range
               les palettes en 3D.
             </p>
           </div>
@@ -228,7 +228,7 @@ function Hero({ variant }) {
 
       <div className="hero__footer">
         <div className="hero__bullets">
-          <span><span className="num">01</span>BUT 3 — Réalisation d'applications</span>
+          <span><span className="num">01</span>BUT 3 · Réalisation d'applications</span>
           <span><span className="num">02</span>Stage data analysis chez STMicroelectronics</span>
           <span><span className="num">03</span>En recherche de stage</span>
         </div>
@@ -274,7 +274,7 @@ function About() {
             <div><dt>Basé à</dt><dd>Allevard (38)</dd></div>
             <div><dt>Étudie à</dt><dd>IUT de Valence</dd></div>
             <div><dt>Anglais</dt><dd>Professionnel</dd></div>
-            <div><dt>Permis</dt><dd>B — véhiculé</dd></div>
+            <div><dt>Permis</dt><dd>B, véhiculé</dd></div>
             <div><dt>Passion</dt><dd>Football, breakdance</dd></div>
           </dl>
         </Reveal>
@@ -347,7 +347,7 @@ function Skills() {
       <Reveal className="section__title" delay={100}>
         <h2>
           La boîte à outils
-          <span className="section__title-sub"> — ce avec quoi je travaille au quotidien.</span>
+          <span className="section__title-sub"> · ce avec quoi je travaille au quotidien.</span>
         </h2>
       </Reveal>
       <div className="skills__grid">
@@ -379,14 +379,14 @@ function Skills() {
 const PROJECTS = [
 {
   n: "01",
-  year: "2025 — 2026",
-  type: "Projet d'études — BUT3",
+  year: "2025 · 2026",
+  type: "Projet d'études · BUT3",
   title: "Application web de gestion d'entrepôt",
   summary:
-  "Une application complète pour suivre, organiser et préparer les commandes d'un entrepôt — avec un algorithme de palettisation 3D et de la reconnaissance vocale pour les préparateurs.",
+  "Une application complète pour suivre, organiser et préparer les commandes d'un entrepôt, avec un algorithme de palettisation 3D et de la reconnaissance vocale pour les préparateurs.",
   role: "Conception & développement full-stack",
   duration: "8 mois",
-  team: "Projet d'équipe — BUT3",
+  team: "Projet d'équipe · BUT3",
   stack: ["PostgreSQL", "Symfony", "React", "TypeScript", "Three.js", "Web Speech API"],
   highlights: [
   "Rédaction du cahier des charges et plan de développement",
@@ -400,11 +400,11 @@ const PROJECTS = [
 {
   n: "02",
   year: "2025",
-  type: "Stage — STMicroelectronics, Crolles",
+  type: "Stage · STMicroelectronics, Crolles",
   title: "Outil de traçabilité & dashboards de production",
   summary:
   "Stage au sein du site STMicroelectonics de Crolles : développer un outil pour tracer les données de production et visualiser les indicateurs de performance, en vue d'améliorer le rendement de production.",
-  role: "Développeur — analyse de données",
+  role: "Développeur · analyse de données",
   duration: "9 semaines",
   team: "Service data analysis solution, site de Crolles",
   stack: ["Spotfire", "Python", "R", "HTML / CSS", "SQL"],
@@ -565,16 +565,16 @@ function Experience() {
           <div className="xp__duration">Avril → Juin · 9 semaines</div>
         </Reveal>
         <Reveal className="xp__what" delay={250}>
-          <h3 className="xp__role">Stagiaire data analysis — Amélioration du rendement de production
+          <h3 className="xp__role">Stagiaire data analysis · Amélioration du rendement de production
 
           </h3>
           <p className="xp__company">
-            <strong>STMicroelectronics</strong> — site de Crolles, Isère
+            <strong>STMicroelectronics</strong> · site de Crolles, Isère
           </p>
           <p className="xp__lead">
             Au sein de l'équipe rendement, j'ai développé un outil de traçabilité de
             données de production et des dashboards pour visualiser les indicateurs de
-            performance — avec pour objectif d'améliorer le rendement de fabrication des
+            performance, avec pour objectif d'améliorer le rendement de fabrication des
             puces produites sur site.
           </p>
           <ul className="xp__list">
@@ -593,7 +593,7 @@ function Experience() {
             </li>
           </ul>
           <div className="xp__takeaway">
-            <span>Ce que j'en retiens —</span>
+            <span>Ce que j'en retiens :</span>
             <p>Travailler avec de vrais volumes de données et des contraintes industrielles, change tout. J'ai appris à creuser les questions avant d'écrire la première ligne de code, et à livrer un outil que d'autres utilisent vraiment.
 
 
@@ -680,7 +680,7 @@ function Contact() {
           <a href="CV_Clement_Chaneliere.pdf" download className="contact__big">
             Télécharger ↓
           </a>
-          <span className="contact__hint">CV_Clement_Chaneliere.pdf — 1 page</span>
+          <span className="contact__hint">CV_Clement_Chaneliere.pdf · 1 page</span>
         </Reveal>
       </div>
     </section>);
@@ -696,7 +696,7 @@ function Footer() {
       <div className="footer__grid">
         <div>
           <div className="footer__label">Site</div>
-          <p>Clément Chaneliere — Portfolio 2026</p>
+          <p>Clément Chaneliere · Portfolio 2026</p>
           <p className="footer__small">
             Conçu &amp; développé à Allevard. Typo&nbsp;: Instrument Serif &amp; Inter.
           </p>
@@ -713,13 +713,13 @@ function Footer() {
         <div>
           <div className="footer__label">Statut</div>
           <p>
-            <span className="status-dot" /> En recherche de stage —
+            <span className="status-dot" /> En recherche de stage ·
             22 juin au 18 septembre 2026.
           </p>
         </div>
       </div>
       <div className="footer__bottom">
-        <span>© 2026 — Clément Chaneliere</span>
+        <span>© 2026 · Clément Chaneliere</span>
       </div>
     </footer>);
 
